@@ -1,0 +1,22 @@
+
+#fondoprueba{
+    background-image: url(/src/imagenes/fondostranspaplicada.png);
+    background-size: cover;
+}
+#logoHP{
+    left: 600px;
+}
+
+.letterone{
+    width: 500px;
+    padding-left: 150px;
+    background-color: rgba(246, 246, 48, 0.6);
+    
+
+}
+
+#escudocarta{
+    width: 120px;
+    padding-left: 50%;
+
+}
