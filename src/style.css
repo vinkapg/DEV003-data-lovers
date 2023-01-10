@@ -1,22 +1,53 @@
 
-#fondoprueba{
+.fondopagina{
     background-image: url(/src/imagenes/fondostranspaplicada.png);
     background-size: cover;
 }
-#logoHP{
-    left: 600px;
+.logoHP{
+    margin: -130px 0px 0px 1160px;
 }
 
 .letterone{
-    width: 500px;
-    padding-left: 150px;
-    background-color: rgba(246, 246, 48, 0.6);
     
+    margin: 0px 990px 30px 69px;
+    height: 340px;
+    /* background-color: rgba(246, 246, 48, 0.6); */
+    background-image: url(/src/imagenes/cartahogwarts2.jpg);
+    background-image: ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    border-radius: 30px;
+    text-align: justify;
+    padding: 230px 30px 10px 30px;
+    font-family: "Passions Conflict", sans-serif;
+    font-size: xx-large;
+    
+}
+
+
+
+.botones{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 80px;
+}
+
+.btns{
+    margin-right: 60px;
+    width: 200px; /*ancho del boton azul*/
+    height: 40px; /*alto del boton azul*/
+    font-family: "Berkshire Swash";
+    font-size: xx-large;
+    background-color: #101542;
+    color: #DAC944;
+    border-radius: 20px;
 
 }
 
-#escudocarta{
-    width: 120px;
-    padding-left: 50%;
-
+.btns:hover{
+    background-color: #eedd61;
+    color: black;
+    cursor: pointer;
 }
