@@ -2,15 +2,18 @@
 .fondopagina{
     background-image: url(/src/imagenes/fondostranspaplicada.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .logoHP{
-    margin: -130px 0px 0px 1160px;
+    margin: -110px 0px 0px 1360px;
+    width: 300px;
 }
 
 .letterone{
     
-    margin: 0px 990px 30px 69px;
-    height: 340px;
+    margin: 0px 790px 80px 309px;
+    height: 300px;
+    width: 700px;
     /* background-color: rgba(246, 246, 48, 0.6); */
     background-image: url(/src/imagenes/cartahogwarts2.jpg);
     background-image: ;
@@ -19,23 +22,21 @@
     display: flex;
     border-radius: 30px;
     text-align: justify;
-    padding: 230px 30px 10px 30px;
+    padding: 70px 30px 40px 50px;
     font-family: "Passions Conflict", sans-serif;
     font-size: xx-large;
     
 }
-
-
-
 .botones{
     display: flex;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 80px;
+    
 }
 
 .btns{
-    margin-right: 60px;
+    margin-right: 90px;
     width: 200px; /*ancho del boton azul*/
     height: 40px; /*alto del boton azul*/
     font-family: "Berkshire Swash";
@@ -50,4 +51,75 @@
     background-color: #eedd61;
     color: black;
     cursor: pointer;
+}
+/GRYFFINDOR/
+.Gryffindor{
+    background-image:url(Fondogryffindor.jpg);
+    width: 40cm;
+    height: 10cm;
+    background-repeat: no-repeat;
+    background-position:left;
+    font-weight:bold; /para poner en negrita el texto/
+    border-radius: 30px;
+    /font-family:;/
+    /opacity: .5;/
+}
+.shieldgryffindor{
+    margin-left: 500px;
+    margin-top: 70px;
+    width:200px;
+    height:200px;
+    position:absolute;
+}
+/HUFFLEPUFF/
+.Hufflepuff{
+    background-image:url(/src/imagenes/Fondohufflepuff.jpg);
+    width: 40cm;
+    height: 10cm;
+    background-repeat: no-repeat;
+    background-position:left;
+    font-weight:bold; /para poner en negrita el texto/
+    border-radius: 30px;
+    /font-family:;/
+    /opacity: .5;/
+}
+.shieldhufflepuff{
+    margin-left: 400px;
+    margin-top: 70px;
+    width: 200px;px;
+    height:200px;
+    position:absolute;
+}
+/RAVENCLAW/
+.Ravenclaw{
+    background-image:url(/src/imagenes/fondoravenclaw.jpg);
+    width: 30cm;
+    height: 50cm;
+    background-repeat: no-repeat;
+    background-position:left;
+    font-weight:bold; /para poner en negrita el texto/
+    border-radius: 30px;
+    /font-family:;/
+    /opacity: .5;/
+}
+.shieldravenclaw{
+    margin-left: 400px;
+    margin-top: 70px;
+    width:400px;
+    height:200px;
+    position:absolute;
+}
+/SLYTHERIN/
+.Slytherin{
+    background-image:url(/src/imagenes/fondoslytherin.jpg);
+    width: 100cm;
+    height: 10cm;
+    background-repeat: no-repeat;
+    background-position:left;
+    font-weight:bold; /para poner en negrita el texto/
+    border-radius: 30px;
+    /font-family:;/
+    /opacity: .5;/
+}
+.shielslytherin{
 }
