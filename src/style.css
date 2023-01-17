@@ -1,6 +1,6 @@
 
 .fondopagina{
-    background-image: url(/src/imagenes/fondostranspaplicada.png);
+    background-image: url(fondostranspaplicada.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -15,8 +15,7 @@
     height: 300px;
     width: 700px;
     /* background-color: rgba(246, 246, 48, 0.6); */
-    background-image: url(/src/imagenes/cartahogwarts2.jpg);
-    background-image: ;
+    background-image: url(cartahogwarts2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -52,74 +51,30 @@
     color: black;
     cursor: pointer;
 }
-/GRYFFINDOR/
-.Gryffindor{
-    background-image:url(Fondogryffindor.jpg);
-    width: 40cm;
-    height: 10cm;
-    background-repeat: no-repeat;
-    background-position:left;
-    font-weight:bold; /para poner en negrita el texto/
-    border-radius: 30px;
-    /font-family:;/
-    /opacity: .5;/
+
+#btnsMenu{
+    display:flex;
+
 }
-.shieldgryffindor{
-    margin-left: 500px;
-    margin-top: 70px;
-    width:200px;
-    height:200px;
-    position:absolute;
+
+#housesP{
+    display: none;
+
 }
-/HUFFLEPUFF/
-.Hufflepuff{
-    background-image:url(/src/imagenes/Fondohufflepuff.jpg);
-    width: 40cm;
-    height: 10cm;
-    background-repeat: no-repeat;
-    background-position:left;
-    font-weight:bold; /para poner en negrita el texto/
-    border-radius: 30px;
-    /font-family:;/
-    /opacity: .5;/
+#charactersP{
+    display: none;
+
 }
-.shieldhufflepuff{
-    margin-left: 400px;
-    margin-top: 70px;
-    width: 200px;px;
-    height:200px;
-    position:absolute;
+#novelsP{
+    display: none;
+
 }
-/RAVENCLAW/
-.Ravenclaw{
-    background-image:url(/src/imagenes/fondoravenclaw.jpg);
-    width: 30cm;
-    height: 50cm;
-    background-repeat: no-repeat;
-    background-position:left;
-    font-weight:bold; /para poner en negrita el texto/
-    border-radius: 30px;
-    /font-family:;/
-    /opacity: .5;/
+#potionsP{
+    display: none;
+
 }
-.shieldravenclaw{
-    margin-left: 400px;
-    margin-top: 70px;
-    width:400px;
-    height:200px;
-    position:absolute;
+#spellsP{
+    display: none;
+
 }
-/SLYTHERIN/
-.Slytherin{
-    background-image:url(/src/imagenes/fondoslytherin.jpg);
-    width: 100cm;
-    height: 10cm;
-    background-repeat: no-repeat;
-    background-position:left;
-    font-weight:bold; /para poner en negrita el texto/
-    border-radius: 30px;
-    /font-family:;/
-    /opacity: .5;/
-}
-.shielslytherin{
-}
+
