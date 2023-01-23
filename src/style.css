@@ -1,12 +1,16 @@
+*{
+    margin: 0px; /*intento de arreglar margen superior sin color azul*/
+}
 
 .fondopagina{
     background-image: url(fondostranspaplicada.png);
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
+    margin: 0px; /*intento de arreglar margen superior sin color azul*/
 }
 .logoHP{
-    margin: -110px 0px 0px 1360px;
-    width: 300px;
+    /* margin: -4px 0px 0px 1390px; */
+    width: 500px;
 }
 
 .letterone{
@@ -41,6 +45,7 @@
     font-family: "Berkshire Swash";
     font-size: xx-large;
     background-color: #101542;
+    transition: background-color .5s;
     color: #DAC944;
     border-radius: 20px;
 
@@ -77,4 +82,107 @@
     display: none;
 
 }
+.logoHPNav{
+    /* margin: -7px 0px 0px 1400px; */
+    width: 400px;
+    padding: 0px;
+    margin: 0px;
+    border: lightcoral solid;
 
+}
+.btnsMenu{
+    background-color: #101542;
+    margin: 0px; /*intento de arreglar margen superior sin color azul*/
+    height: 100%;
+
+}
+.imgMenu{
+    margin-top: 0px; /*intento de arreglar margen superior sin color azul*/
+    /* float: left; */
+    /* padding-top: 0px; */
+    border: red solid;
+}
+.opcionesMenu{
+    /* float: left; */
+    padding-bottom: 15px;
+    padding-left: 10px;
+    border: lightblue solid;
+}
+/* .charactersP{
+    border: chocolate solid;
+} */
+.btnsNav{
+    margin-right: 90px;
+    width: 200px; /*ancho del boton azul*/
+    height: 40px; /*alto del boton azul*/
+    font-family: "Berkshire Swash";
+    font-size: xx-large;
+    background-color: #101542;
+    color: #DAC944;
+    transition: color .5s;
+    border: #101542;
+}
+.btnsNav:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.div_dataCharacters{
+    margin: 50px 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Apertura de tarjetas con datos de personajes */
+.open_dataCharacters {
+    background: rgba(33, 41, 52, .80);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+}
+
+.tarjeta_dataCharacters {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 999;
+
+}
+.contenedor_filtro_AZ{
+    border: lightcoral solid;
+    float: left;
+    margin: 0px 40px;
+}
+.contenedor_filtro_gender{
+    float: left;
+    border: lightblue solid;
+}
+.filtro_horizontal_block{
+    /* float: right; */
+    margin: 0px;
+
+}
+.div_dataCharacters{ 
+    border: brown solid;
+    margin: 100px 0px 0px 0px;
+    float: left;    
+}

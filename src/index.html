@@ -9,8 +9,9 @@
   </head>
   <body id="fondopagina" class="fondopagina">
 <section id="pantallaPrincipal">
-  <img src="./imagenes/aniversariohp.png" alt="" id="logoHP" class="logoHP">
-  <article class="letterone">
+  <div><img src="./imagenes/aniversariohp_sf.png" alt="" id="logoHP" class="logoHP"></div>
+  <div>
+    <article class="letterone">
     <h5>Dear Mr Muggle: <br><br>
 We are pleased to inform you that from now on you will be able to get to know our school
 Hogwart of Witchcraft and Wizardry, so below we leave you everything
@@ -20,7 +21,8 @@ Minerva McGonagall <br>
 Deputy directors
 </h5><br>
 <!-- <img src="/src/imagenes/escudocarta.png" alt="" id="escudocarta" class="escudocarta"> -->
-  </article>
+    </article>
+  </div>
   <article class="botones">
       <button class="btns" id="houses">Houses</button>
       <button class="btns" id="characters">Characters</button>
@@ -29,23 +31,71 @@ Deputy directors
       <button class="btns" id="spells">Spells</button>
   </article>
 </section>
-  <br>
-<br>
-<nav id="btnsMenu">
-  <button class="btns" id="housesMenu">Houses</button>
-  <button class="btns" id="charactersMenu">Characters</button>
-  <button class="btns" id="novelsMenu">Novels</button>
-  <button class="btns" id="potionsMenu">Potions</button>
-  <button class="btns" id="spellsMenu">Spells</button>
+
+<nav id="btnsMenu" class="btnsMenu">
+  <div class="imgMenu">
+    <img src="./imagenes/aniversariohp_sf.png" alt="" id="logoHPNav" class="logoHPNav">
+  </div>
+  <div class="opcionesMenu">
+    <button class="btnsNav" id="housesMenu">Houses</button>
+    <button class="btnsNav" id="charactersMenu">Characters</button>
+    <button class="btnsNav" id="novelsMenu">Novels</button>
+    <button class="btnsNav" id="potionsMenu">Potions</button>
+    <button class="btnsNav" id="spellsMenu">Spells</button>
+  </div>
 </nav>
 
 <section id="housesP">
+  <div class="filtros-housesP">
+    <button class="housesFiltro" id="housesFiltro">Houses</button>
+  </div>
+  <div id="div-datahouses"></div>
   <nav> Acá inicia houses </nav>
-  <h1>ksjfldkjfkls</h1>
 </section>
 
-<section id="charactersP">
-  <nav> Acá inicia personajes </nav>
+<section id="charactersP" class="charactersP">
+  <div class="filtro_horizontal_block" id="filtro_horizontal_block">
+    <div class="contenedor_filtro_AZ">
+        <div class="filtro_horizontal_titulo">
+            <h4>Ordenar por</h4><br>
+        </div>
+        <div class="filtro_radio">
+            <input type="radio" id="filtro_ascendente" class="filtro_ascendente" name="ord_alfabetico" value="">
+            <label for="filtro_ascendente">Ascendente (A-Z)</label>
+            <br>
+            <input type="radio" id="filtro_descendente" class="filtro_descendente" name="ord_alfabetico" value="">
+            <label for="filtro_descendente">Descendente (Z-A)</label> 
+        </div>
+    </div>
+    <div class="contenedor_filtro_gender">
+      <div class="filtro_horizontal_titulo2">
+          <h4>Gender/Genero</h4><br>
+      </div>
+      <div class="filtro_radio">
+          <input type="radio" id="filtro_females" class="filtro_females" name="gender" value="">
+          <label for="filtro_ascendente">Females</label>
+          <br>
+          <input type="radio" id="filtro_males" class="filtro_male" name="gender" value="">
+          <label for="filtro_descendente">Males</label> 
+      </div>
+    </div>
+  </div>
+  <!-- <div class="filtros-charactersP">
+    <button class="femFiltro" id="femFiltro">Femenino</button>
+    <button class="charcFiltro" id="charcFiltro">Houses</button>
+    <button id="abrirContenedor">Ir a data</button> 
+  </div> -->
+  <div class="div_dataCharacters" id="div_dataCharacters">
+    <div class="casilla_characters" id="casilla_characters"></div>
+  </div>
+
+  <!-- Al dar clic en un nombre debe aparecer los datos en una ventana emergente, siguiente código para dicha ventana: -->
+<div class="open_dataCharacters" id="open_dataCharacters">
+    <div class="tarjeta_dataCharacters">
+        <div class="tarjeta_text">Aca debe ir la info del personaje</div>
+        <button class="botonCierre" id="botonCierre"> <!--<a href="#" id="close-button"> --> Aceptar <!-- </a> --> </button>
+    </div>
+</div>
 </section>
 
 <section id="novelsP">

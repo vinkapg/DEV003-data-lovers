@@ -3095,7 +3095,7 @@ export default {
       "death": null,
       "species": "Human",
       "ancestry": "Muggle",
-      "gender": "Male",
+      "gender": "Female",
       "hair_color": "Brown",
       "eye_color": "Brown",
       "wand": null,
