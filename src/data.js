@@ -1,7 +1,3 @@
-export const genero = (data,gender) => {
-  const datosGenero = data.characters.filter(characters => (characters.gender === gender));
-  return datosGenero
-}
 export function sortMe(data) {
   const dataOrdenadaAZ = data.sort((a, b) => {
     const nameA = a.name.toUpperCase();
@@ -30,4 +26,3 @@ export function sortMe2(data) {
   });
   return dataOrdenadaZA
 }
-
