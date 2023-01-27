@@ -1,18 +1,14 @@
-import { sortMe, sortMe2, personajes } from './data.js';
-import { femenino } from './data.js';
+import { sortMe, sortMe2, genero } from './data.js';
 import data from './data/harrypotter/data.js';
-console.log(personajes(data,"Hufflepuff"))
-console.log(femenino(data,"Females"))
-
-
 
 document.getElementById("btnsMenu").style.display="none";
 document.getElementById("charactersP").style.display="none";
 document.getElementById("pantallaPrincipal").style.display="block";
-document.getElementById("housesP").style.display="none";       
+document.getElementById("housesP").style.display="none";
 document.getElementById("novelsP").style.display="none";
 document.getElementById("potionsP").style.display="none";
 document.getElementById("spellsP").style.display="none";
+
 // al dar clic en el botón houses me debe mostrar la pagina de houses
 document.querySelector("#houses").addEventListener("click", housesPage);
 document.querySelector("#housesMenu").addEventListener("click", housesPage);
@@ -20,7 +16,7 @@ function housesPage(){
   document.getElementById("btnsMenu").style.display="block";
   document.getElementById("housesP").style.display="block";
   document.getElementById("pantallaPrincipal").style.display="none";
-  document.getElementById("charactersP").style.display="none";       
+  document.getElementById("charactersP").style.display="none";
   document.getElementById("novelsP").style.display="none";
   document.getElementById("potionsP").style.display="none";
   document.getElementById("spellsP").style.display="none";
@@ -32,7 +28,7 @@ function charactersPage(){
   document.getElementById("btnsMenu").style.display="block";
   document.getElementById("charactersP").style.display="block";
   document.getElementById("pantallaPrincipal").style.display="none";
-  document.getElementById("housesP").style.display="none";       
+  document.getElementById("housesP").style.display="none";
   document.getElementById("novelsP").style.display="none";
   document.getElementById("potionsP").style.display="none";
   document.getElementById("spellsP").style.display="none";
@@ -44,7 +40,7 @@ function novelsPage(){
   document.getElementById("btnsMenu").style.display="block";
   document.getElementById("novelsP").style.display="block";
   document.getElementById("pantallaPrincipal").style.display="none";
-  document.getElementById("housesP").style.display="none";       
+  document.getElementById("housesP").style.display="none";
   document.getElementById("charactersP").style.display="none";
   document.getElementById("potionsP").style.display="none";
   document.getElementById("spellsP").style.display="none";
@@ -56,7 +52,7 @@ function potionsPage(){
   document.getElementById("btnsMenu").style.display="block";
   document.getElementById("potionsP").style.display="block";
   document.getElementById("pantallaPrincipal").style.display="none";
-  document.getElementById("housesP").style.display="none";       
+  document.getElementById("housesP").style.display="none";
   document.getElementById("charactersP").style.display="none";
   document.getElementById("novelsP").style.display="none";
   document.getElementById("spellsP").style.display="none";
@@ -68,25 +64,30 @@ function spellsPage(){
   document.getElementById("btnsMenu").style.display="block";
   document.getElementById("spellsP").style.display="block";
   document.getElementById("pantallaPrincipal").style.display="none";
-  document.getElementById("housesP").style.display="none";       
+  document.getElementById("housesP").style.display="none";
   document.getElementById("charactersP").style.display="none";
   document.getElementById("novelsP").style.display="none";
   document.getElementById("potionsP").style.display="none";
 }
-
+//Función para traer información a pantalla (innerHTML hace el proceso de mostrar en pantalla)
 const dataCharacters = data.characters
 function paintData(dataCharacters){
-  
   let contentCharacters = ''
   for (let index = 0; index < dataCharacters.length; index++) {
-    const element = `<a href="#" class="links_characters"><p data-idP=${dataCharacters[index].id}> ${dataCharacters[index].name}<p></a>`;
+    const element = `<div class="contenedor_personajes">
+    <div class="name"> <p> <b>Name: </b>${dataCharacters[index].name}<p>
+    <div> <p> <b> Birth: </b> ${dataCharacters[index].birth}<p> </div>
+    <div> <p> <b> Death: </b>${dataCharacters[index].death}<p> </div>
+    <div> <p> <b> Species: </b> ${dataCharacters[index].species}<p> </div>
+    <div> <p> <b> Gender: </b>${dataCharacters[index].gender}<p> </div>
+    <div> <p> <b> Patronus:</b>${dataCharacters[index].patronus}<p> </div>
+    <div> <p> <b> House: </b>${dataCharacters[index].house}<p> </div>
+    <div> <p> <b> Books: </b>${dataCharacters[index].books_featured_in}<p> </div></div></div>`;
     contentCharacters = contentCharacters + element;
-  } 
+  }
   return contentCharacters
-
 }
 document.getElementById("casilla_characters").innerHTML = paintData(dataCharacters)
-
 
 
 //Filtro para ordenar el listado de A-Z
@@ -100,26 +101,25 @@ document.getElementById("filtro_descendente").addEventListener("click", function
   const orderedArrayZA = sortMe2(dataCharacters)
   document.getElementById("casilla_characters").innerHTML = paintData(orderedArrayZA)
 })
+
 //Filtro por genero -- Femenino/Females
 document.getElementById("filtro_females").addEventListener("click", function(){
-  const filtroFem = femenino(data, "Female")
+  const filtroFem = genero(data, "Female")
   document.getElementById("casilla_characters").innerHTML = paintData(filtroFem)
 })
+
 //Filtro por genero -- Masculino/Males
 document.getElementById("filtro_males").addEventListener("click", function(){
-  const filtroMasc = femenino(data, "Male")
+  const filtroMasc = genero(data, "Male")
   document.getElementById("casilla_characters").innerHTML = paintData(filtroMasc)
 })
 
 //Seleccionar a los personajes para ventana emergente
 // al dar clic en un nombre se debe abrir un div. div,id: "open_dataCharacters"
-
 const open = document.querySelectorAll(".links_characters");
 const contenido = document.getElementById("open_dataCharacters");
-
 for (let i = 0; i< open.length; i++){
   open[i].addEventListener("click", ()=>{
-    console.log(open[i])
     contenido.classList.add("show");
   });
   const close = document.getElementById("botonCierre");
@@ -127,48 +127,3 @@ for (let i = 0; i< open.length; i++){
     contenido.classList.remove("show");
   });
 }
-
-
-
-
-// const tipoCasa = getElementById("idDealgunlugar")
-// if(tipoCasa === "Gryffindor"){
-//   return personajes(data,"Hufflepuff")
-// }if (tipoCasa === "Hufflupuff"){
-//   return XXX
-// }
-
-
-
-
-
-
-
-
-
-
-// let contentHouses = ''
-// for (let index = 0; index < data.characters.length; index++) {
-//   const element = `<p data-idP=${data.characters[index].id}> ${data.characters[index].name}<p>`;
-//   contentHouses = contentHouses + element;
-  
-// } 
-
-// document.getElementById("div-datahouses").innerHTML = contentHouses
-
-
-
-
-
-
-
-
-
-
-//JSON.stringify(data.characters);
-
-
-
-//mostrar el listado de nombres de los personajes
-
-//mostrar toda la data de personajes 
