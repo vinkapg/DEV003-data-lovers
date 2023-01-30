@@ -88,7 +88,7 @@
       <br>
       <br>
       <br>
-      <ol> Founder: Salazar Slytherin </ol>
+      <ol> <b>Founder: </b> Salazar Slytherin </ol>
       <ol> Head of house: Severus Snape </ol>
       <ol> Colors: Emerald green and silver </ol>
       <ol> Animal: Snake </ol>
@@ -111,33 +111,11 @@
           <input type="radio" id="filtro_descendente" class="filtro_descendente" name="ord_alfabetico" value="">
           <label for="filtro_descendente">Descendente (Z-A)</label>
         </div>
-        <!-- <select id="di">
-          <optgroup label="Ordenar por">
-            <option id="filtro_ascendente">A a Z</option>
-            <option id="filtro_descendente">Z a A</option>
-          </optgroup>
-        </select> -->
       </div>
       <div class="contenedor_filtro_gender">
         <div class="filtro_horizontal_titulo2">
           <h4>Gender/Genero</h4><br>
         </div>
-        <!-- <form>
-      <label for="dino-select">Filtre por:</label>
-      <select id="dino-select">
-        <optgroup label="Houses">
-          <option>Gryffindor</option>
-          <option>Hufflepuff</option>
-          <option>Ravenclaw</option>
-          <option>Slytherin</option>
-        </optgroup>
-      </select>
-      <select id="dino">
-        <optgroup label="Gender">
-          <option>Female</option>
-          <option>Male</option>
-        </optgroup>
-      </select> -->
         <div class="filtro_radio">
           <input type="radio" id="filtro_females" class="filtro_females" name="gender" value="">
           <label for="filtro_ascendente">Females</label>
@@ -150,27 +128,36 @@
     <div class="div_dataCharacters" id="div_dataCharacters">
       <div class="casilla_characters" id="casilla_characters"></div>
     </div>
-    <!-- Al dar clic en un nombre debe aparecer los datos en una ventana emergente, siguiente código para dicha ventana: -->
-    <div class="open_dataCharacters" id="open_dataCharacters">
-      <div class="tarjeta_dataCharacters">
-        <div class="tarjeta_text">Aca debe ir la info del personaje</div>
-        <button class="botonCierre" id="botonCierre"> <!--<a href="#" id="close-button"> --> Aceptar <!-- </a> -->
-        </button>
-      </div>
-    </div>
   </section>
   <section id="novelsP">
-    <nav> Acá inicia novelas </nav>
+    <div class="div_dataNovels" id="div_dataNovels">
+      <div class="casilla_novels" id="casilla_novels"></div>
+    </div>
   </section>
   <section id="potionsP">
     <nav> Acá inicia potions </nav>
   </section>
   <section id="spellsP">
-    <div>
-    </div>
-    <div id="contenido_hechizos">
-    </div>
-  </section>
+    <div class="div_dataSpells" id="div_dataSpells">
+      <form>
+        <label class="seleccionar">Filtre por:</label>
+        <select id="dino-select">
+          <optgroup label="Spells type">
+            <option>Charm</option>
+            <option>Conjuration</option>
+            <option>Spell</option>
+            <option>Transfiguration</option>
+            <option>Healingspell</option>
+            <option>Vanishment</option>
+            <option>Hex</option>
+            <option>Jinx</option>
+            <option>Curse</option>
+            <option>Transportation</option>
+          </optgroup>
+        </select>
+    <div class="casilla_spells" id="casilla_spells"></div>
+   </div>
+</section>
   <div id="root"></div>
   <script src="main.js" type="module"></script>
 </body>

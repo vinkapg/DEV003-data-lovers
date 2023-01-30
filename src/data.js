@@ -30,4 +30,3 @@ export function sortMe2(data) {
   });
   return dataOrdenadaZA
 }
-
