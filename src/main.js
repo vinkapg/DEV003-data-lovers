@@ -116,14 +116,53 @@ document.getElementById("filtro_males").addEventListener("click", function(){
 
 //Seleccionar a los personajes para ventana emergente
 // al dar clic en un nombre se debe abrir un div. div,id: "open_dataCharacters"
-const open = document.querySelectorAll(".links_characters");
-const contenido = document.getElementById("open_dataCharacters");
-for (let i = 0; i< open.length; i++){
-  open[i].addEventListener("click", ()=>{
-    contenido.classList.add("show");
-  });
-  const close = document.getElementById("botonCierre");
-  close.addEventListener("click", ()=>{
-    contenido.classList.remove("show");
-  });
+// const open = document.querySelectorAll(".links_characters");
+// const contenido = document.getElementById("open_dataCharacters");
+// for (let i = 0; i< open.length; i++){
+//   open[i].addEventListener("click", ()=>{
+//     contenido.classList.add("show");
+//   });
+//   const close = document.getElementById("botonCierre");
+//   close.addEventListener("click", ()=>{
+//     contenido.classList.remove("show");
+//   });
+// }
+
+//Función para traer información a pantalla HECHIZOS
+const dataSpells = data.spells
+function paintDataSpells(dataSpells){
+  let contentSpells = ''
+  for (let index = 0; index < dataSpells.length; index++) {
+    const element1 = `<div class="contenedor_spells">
+     <div class="name_spells"> <p> <b>Name: </b>${dataSpells[index].name}<p>
+     <div> <p> <b> Pronunciation : </b> ${dataSpells[index].pronunciation}<p> </div>
+     <div> <p> <b> Spell Type: </b>${dataSpells[index].spell_type}<p> </div>
+     <div> <p> <b> Description: </b> ${dataSpells[index].description}<p> </div>
+     <div> <p> <b> Mention: </b>${dataSpells[index].mention}<p> </div>
+     <div> <p> <b> Etymology: </b>${dataSpells[index].etymology}<p> </div> </div></div>`;
+    contentSpells = contentSpells + element1;
+  }
+  return contentSpells
 }
+document.getElementById("casilla_spells").innerHTML = paintDataSpells(dataSpells)
+
+
+
+
+
+
+//Función para traer información a pantalla NOVELS
+const dataNovels = data.books
+function paintDataNovels(dataNovels){
+  let contentNovels = ''
+  for (let index = 0; index < dataNovels.length; index++) {
+    const element = `<div class="contenedor_novels">
+    <div class="title"> <p> <b>Titulo del Libro: </b>${dataNovels[index].title}<p>
+    <div> <p> <b> Fecha de Lanzamiento: </b> ${dataNovels[index].releaseDay}<p> </div>
+    <div> <p> <b> Autor: </b>${dataNovels[index].author}<p> </div>
+    <div> <p> <b> Descripción: </b> ${dataNovels[index].description}<p> </div></div></div>`;
+    contentNovels = contentNovels + element;
+  }
+  return contentNovels
+}
+document.getElementById("casilla_novels").innerHTML = paintDataNovels(dataNovels)

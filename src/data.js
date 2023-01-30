@@ -10,7 +10,7 @@ export const personajes = (data,house) => {
   
 // }
 
-export const femenino = (data,gender) => {
+export const genero = (data,gender) => {
   const datosGenero = data.characters.filter(characters => (characters.gender === gender));
   return datosGenero
 }

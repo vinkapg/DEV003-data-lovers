@@ -186,34 +186,33 @@
 }
 /* Primer filtro. caja */
 .contenedor_filtro_AZ {
-  border: #573C01,solid;
   float: left;
   margin: 0px 40px;
   font-family: "Berkshire Swash";
-  background-color: #DBAB42;
   filter:alpha(opacity=70);
   -moz-opacity:.70;opacity:.70;
-  border-radius: 05px;
-}
+} 
 /* Segundo filtro. caja */
 .contenedor_filtro_gender {
   float: left;
-  border: #573C01;
   font-family: "Berkshire Swash";
-  background-color: #DBAB42;
   filter:alpha(opacity=70);
   -moz-opacity:.70;opacity:.70;
-  border-radius: 05px;
-}
+} 
 .filtro_horizontal_block {
-  /* float: right; */
+  /* float: left; */
   margin: 0px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 80px;
 }
 /* Esto es para modificar el cuadro donde se encuentra el listado de nombre de personajes */
 .div_dataCharacters {
   /* border: rgb(165, 42, 165) solid; */
   float: left;
-  background-color: #A9A49A;
+  /* background-color: #A9A49A; */  /*Fondo blanco atras de los div de los personajes*/
   filter:alpha(opacity=70);
   -moz-opacity:.70;opacity:.70; */
 }
@@ -317,16 +316,57 @@
   width: 5cm;
   margin-top: 40px;
 }
-.casilla_characters{
-  background-color: blueviolet;
-}
+/* .casilla_characters{
+  background-color: white;
+} */
 .name{
-  background-color: rosybrown;
+  background-color: rgba(28, 17, 65, 0.99);
+  /* background-color: #573C01; */
   margin: 10px;
   width: 350px;
   height: 250px;
+  padding: 30px;
+  color: #fff;
+  border-radius: 20px;
+  border: white solid 2px;
+  font-family: unset;
+  font-size: large;
+
 }
 .contenedor_personajes{
   float: left;
 }
 
+.contenedor_novels{
+  float: left;
+}
+.title{
+  background-color: rgba(168, 153, 219, 0.88);
+  margin: 10px;
+  width: 550px;
+  height: 250px;
+  padding: 30px;
+  color: #fff;
+  border-radius: 20px;
+  border: #DAC944 solid 2px;
+  font-family: unset;
+  font-size: large;
+}
+.name_spells{
+  background-color: rgba(233, 227, 235, 0.99);
+  /* background-color: #573C01; */
+  margin: 10px;
+  width: 800px;
+  height: 200px;
+  padding: 30px;
+  color: rgb(69, 26, 55);
+  border-radius: 20px;
+  border: white solid 2px;
+  font-family: unset;
+  font-size: large;
+  filter:alpha(opacity=70);
+  -moz-opacity:.70;opacity:.70;
+}
+.contenedor_spells{
+  /* background-color: #ddd; */
+}
