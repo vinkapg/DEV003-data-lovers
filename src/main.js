@@ -1,6 +1,5 @@
 import { sortMe, sortMe2, genero } from './data.js';
 import data from './data/harrypotter/data.js';
-
 document.getElementById("btnsMenu").style.display="none";
 document.getElementById("charactersP").style.display="none";
 document.getElementById("pantallaPrincipal").style.display="block";
@@ -8,7 +7,6 @@ document.getElementById("housesP").style.display="none";
 document.getElementById("novelsP").style.display="none";
 document.getElementById("potionsP").style.display="none";
 document.getElementById("spellsP").style.display="none";
-
 // al dar clic en el botón houses me debe mostrar la pagina de houses
 document.querySelector("#houses").addEventListener("click", housesPage);
 document.querySelector("#housesMenu").addEventListener("click", housesPage);
@@ -73,8 +71,9 @@ function spellsPage(){
 const dataCharacters = data.characters
 function paintData(dataCharacters){
   let contentCharacters = ''
+  
   for (let index = 0; index < dataCharacters.length; index++) {
-    const element = `<div class="contenedor_personajes">
+    const element = `<div class="contenedor_personajes"> 
     <div class="name"> <p> <b>Name: </b>${dataCharacters[index].name}<p>
     <div> <p> <b> Birth: </b> ${dataCharacters[index].birth}<p> </div>
     <div> <p> <b> Death: </b>${dataCharacters[index].death}<p> </div>

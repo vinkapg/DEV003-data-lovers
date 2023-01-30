@@ -1,21 +1,7 @@
-// import data from "./data/harrypotter/data";
-
-export const personajes = (data,house) => {
-  const datosCharacters = data.characters.filter(characters => (characters.house === house));
-  return datosCharacters
-}
-
-// export const personajesDatos = () => {
-//   return data.characters.map(characters => (characters.name));
-  
-// }
-
 export const genero = (data,gender) => {
   const datosGenero = data.characters.filter(characters => (characters.gender === gender));
   return datosGenero
 }
-
-
 export function sortMe(data) {
   const dataOrdenadaAZ = data.sort((a, b) => {
     const nameA = a.name.toUpperCase();
@@ -30,7 +16,6 @@ export function sortMe(data) {
   });
   return dataOrdenadaAZ
 }
-
 export function sortMe2(data) {
   const dataOrdenadaZA = data.sort((a, b) => {
     const nameA = a.name.toUpperCase();
