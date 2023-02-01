@@ -38,10 +38,19 @@ Nos enfocamos en cinco historia de usuarios, las cuales se detallan a continuaci
 ## Prototipo de baja fidelidad
 
 [EXCEL](https://docs.google.com/spreadsheets/d/1yQGWTxtprb9EybkvgwS5iXQaZWg6-EvV/edit#gid=342280389)
+![image](https://user-images.githubusercontent.com/119441017/216050404-e7a83dbf-1761-4756-8519-ca7d95a8abac.png)
+![image](https://user-images.githubusercontent.com/119441017/216050711-f12f87fe-44e3-4fd8-a8b9-355ba7f6ec25.png)
+![image](https://user-images.githubusercontent.com/119441017/216050796-c428ad56-3f22-4cd5-8dfe-f178b54de01d.png)
+![image](https://user-images.githubusercontent.com/119441017/216050883-1526b33a-5444-405a-8fcf-eb5d6b9e62d3.png)
+
 
 ## Prototipo de alta fidelidad
 
 [FIGMA][https://www.figma.com/file/OzztDE2wOfi8hxgnxg9yM6/Prototipo-1?node-id=0%3A1&t=nuONrbszRr3FFZwG-0]
+
+![image](https://user-images.githubusercontent.com/119441017/216050044-3548cfb7-a200-4c88-8cf4-768076984691.png)
+![image](https://user-images.githubusercontent.com/119441017/216050120-d53c9631-5a25-4cf5-ad76-347073f9db59.png)
+
 
 # Testeos de usabilidad
 
