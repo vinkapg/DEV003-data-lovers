@@ -30,3 +30,11 @@ export function sortMe2(data) {
   });
   return dataOrdenadaZA
 }
+
+
+// Filtro para página hechizos
+export const hechizos = (data,spell_type) => {
+  const datosSpells = data.spells.filter(spells => (spells.spell_type === spell_type));
+  return datosSpells
+}
+

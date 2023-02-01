@@ -63,7 +63,8 @@ export const dataSet = {
       "house": null,
       "associated_groups": [],
       "books_featured_in": [5]
-    }]};
+    }]
+};
 export const dataSet2 = {
   characters: [
     {
@@ -129,4 +130,5 @@ export const dataSet2 = {
       "house": null,
       "associated_groups": [],
       "books_featured_in": [5]
-    }]};
+    }]
+};
