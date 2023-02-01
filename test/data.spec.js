@@ -52,3 +52,5 @@ describe('sortMe2', () => {
     expect(result[0].name).toEqual("Stewart Ackerley");
   });
 });
+
+

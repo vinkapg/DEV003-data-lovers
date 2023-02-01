@@ -1,3 +1,53 @@
+# Readme Data Lovers - Harry Potter
+Vinka Peña - Pamela González
+
+## Definición del producto
+
+Nuestra página está pensada para un usuario que esta comenzando a incursionar el mundo de Harry Potter, nos hemos enfocado en algunas historias de usuarios, las cuales nos han permitido, replicarlas en nuestro proyecto para que la navegación de nuestra página se haga más amigable y fácil. 
+
+## Historias de usuario
+
+Nos enfocamos en cinco historia de usuarios, las cuales se detallan a continuación:
+ 1. Casas: Nos pidieron conocer información relevante sobre cada casa de Hogwarts, como:
+    - Fundador
+    - Jefe del hogar
+    - Colores que representaban cada casa
+    - Animal
+    - Elemento
+    - Reliquia que posee cada casa
+    - Personajes relevantes
+
+2. Personajes: Para los usuarios era importante conocer los distintos personajes que aparecen en la Saga de Harry Potter, desde el más importante al menos relevante. Es por eso, que quisimos incorporar todos los personajes de la Saga, poniendo dos filtros de búsqueda que permitirán al usuario buscar a su personaje de manera más rápida. Los filtros a utilizar fueron los siguientes:
+    - Orden ascendiente
+    - Orden descendiente
+    - Filtro de genero
+
+3. Novelas: Muchos usuarios nos comentaron que les gustaría conocer el orden de cada novela que se ha escrito de la Saga, por lo tanto, de manera cronologica, incorporamos una imagen de la portada del libro con un pequeño detalle de ella.
+
+4. Pociones: Nos solicitaron poder incorporar las distintas pociones que aparecen en las peliculas de la Saga. Para ello, pusimos en recuadro de cada poción con su nombre y una pequeña descripción.
+5. Hechizos: La lista de hechizos fue la más solicitada, ya que varios querían conocer qué hace cada hechizo. Para ello, incorporamos un filtro, donde muestra de manera ordenada los tipos de hechizos que existen. Los agrupamos de la siguiente manera:
+    - Encantamiento
+    - Conjuro
+    - Spell
+    - Transfiguración
+    - Desaparición
+    - Maleficio
+    - Maldición
+    - Transportación
+
+## Prototipo de baja fidelidad
+
+[EXCEL](https://docs.google.com/spreadsheets/d/1yQGWTxtprb9EybkvgwS5iXQaZWg6-EvV/edit#gid=342280389)
+
+## Prototipo de alta fidelidad
+
+[FIGMA][https://www.figma.com/file/OzztDE2wOfi8hxgnxg9yM6/Prototipo-1?node-id=0%3A1&t=nuONrbszRr3FFZwG-0]
+
+# Testeos de usabilidad
+
+Nos enfocamos en realizar test de corroborar el orden ascendiente y descendiente. También que los filtros de genero funcionaran, arrojando error cuando no fuese el caso. Al principio tuvimos que cambiar un nombre de una variable, ya que no era muy clara para la función a la cual la estabamos llamando. 
+
+
 # Data Lovers
 
 ## Índice
@@ -621,3 +671,5 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
 * [ ] UI: Es _responsive_.
+
+[def]: https://www.figma.com/file/OzztDE2wOfi8hxgnxg9yM6/Prototipo-1?node-id=0%3A1&t=nuONrbszRr3FFZwG-0
